@@ -1,4 +1,4 @@
-import type { IBoundingBox, IGrid, IPoint } from '../types';
+import type { IBoundingBox, IPoint } from '../types';
 
 export const checkCollision = (
   boxA: IBoundingBox,
@@ -56,4 +56,10 @@ export const getOffset = (element: HTMLElement | null, pointer: IPoint) => {
       y: ((pointer.y - rect.y) / rect.height) * 100,
     },
   };
+};
+
+export const getDistance = (pointA: IPoint, pointB: IPoint): number => {
+  const dx = pointB.x - pointA.x;
+  const dy = pointB.y - pointA.y;
+  return Math.sqrt(dx * dx + dy * dy);
 };
