@@ -1,6 +1,6 @@
 {
   "name": "vue-dnd-kit-core",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Vue DnD Kit – легковесная библиотека Vue для создания производительных и доступных интерфейсов drag and drop",
   "author": "zizigy",
   "license": "MIT",
@@ -27,9 +27,6 @@
   ],
   "peerDependencies": {
     "vue": ">=3.2.0"
-  },
-  "dependencies": {
-    "@vue-dnd-kit/utilities": "^0.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
