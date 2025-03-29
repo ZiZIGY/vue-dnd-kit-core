@@ -1,6 +1,6 @@
 {
   "name": "vue-dnd-kit-core",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Vue DnD Kit – легковесная библиотека Vue для создания производительных и доступных интерфейсов drag and drop",
   "author": "zizigy",
   "license": "MIT",
@@ -18,7 +18,14 @@
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    }
+  },
   "files": [
     "README.md",
     "CHANGELOG.md",
