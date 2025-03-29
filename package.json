@@ -1,6 +1,6 @@
 {
-  "name": "@vue-dnd-kit/core",
-  "version": "0.1.0",
+  "name": "vue-dnd-kit-core",
+  "version": "0.0.6",
   "description": "Vue DnD Kit – легковесная библиотека Vue для создания производительных и доступных интерфейсов drag and drop",
   "author": "zizigy",
   "license": "MIT",
@@ -33,14 +33,15 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "^8.38.0",
     "typescript": "^4.9.5",
     "vite": "^4.3.9",
     "vite-plugin-dts": "^2.3.0",
     "vitest": "^0.29.7",
-    "vue": "^3.2.47",
-    "eslint": "^8.38.0"
+    "vue": "^3.2.47"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
