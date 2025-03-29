@@ -25,16 +25,6 @@ export interface IDnDStore {
   pointerPosition: IPointerPosition;
 }
 
-/** Auto-scroll configuration options */
-export interface IAutoScrollOptions {
-  /** Distance from edge to start auto-scrolling (px) */
-  threshold?: number;
-  /** Scrolling speed (px/frame) */
-  speed?: number;
-  /** Whether auto-scroll is disabled */
-  disabled?: boolean;
-}
-
 /** Active container information */
 export interface IActiveContainer {
   /** Vue component reference */
@@ -56,20 +46,6 @@ export interface IPointerPosition {
     /** Offset in pixels */
     pixel: Ref<IPoint | null>;
   };
-}
-
-/** Grid configuration for drag container */
-export interface IGrid {
-  /** Size of each grid cell (px) */
-  cellSize?: number;
-  /** Gap between grid cells (px) */
-  gap?: number;
-}
-
-/** Options for drag container */
-export interface IUseDragContainerOptions {
-  /** Grid configuration */
-  grid?: IGrid;
 }
 
 /** Draggable element configuration */
