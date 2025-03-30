@@ -1,9 +1,27 @@
 {
   "name": "@vue-dnd-kit/core",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Core functionality for Vue DnD Kit - a lightweight Vue 3 library for building performant and accessible drag and drop interfaces",
   "author": "ZiZIGY",
   "license": "MIT",
+  "keywords": [
+    "vue",
+    "dnd",
+    "drag",
+    "drop",
+    "drag and drop",
+    "drag and drop library",
+    "drag and drop component",
+    "vue dnd",
+    "vue drag and drop",
+    "vue drag and drop library",
+    "vue drag and drop component",
+    "vue dnd kit",
+    "vue dnd kit core",
+    "vue dnd kit core component",
+    "dnd-kit",
+    "dnd-kit core"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zizigy/vue-dnd-kit.git",
