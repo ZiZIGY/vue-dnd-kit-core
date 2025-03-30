@@ -91,55 +91,6 @@ yarn add @vue-dnd-hooks/core
 pnpm install @vue-dnd-hooks/core
 ```
 
-## Basic Usage
-
-### Example using useDrag
-
-```vue
-<script setup lang="ts">
-  import { useDrag } from '@vue-dnd-hooks/core';
-
-  const { elementRef, handleDragStart, isDragging } = useDrag({
-    events: { 
-      onEnd: () => console.log('Drag ended') 
-    },
-  });
-</script>
-
-<template>
-  <div
-    ref="elementRef"
-    @pointerdown="handleDragStart"
-    :class="{ dragging: isDragging }"
-  >
-    Drag me
-  </div>
-</template>
-```
-
-### Example using useDrop
-
-```vue
-<script setup lang="ts">
-  import { useDrop } from '@vue-dnd-hooks/core';
-
-  const { elementRef, isOvered } = useDrop({
-    events: { 
-      onDrop: () => console.log('Item dropped') 
-    },
-  });
-</script>
-
-<template>
-  <div
-    ref="elementRef"
-    :class="{ 'drop-zone': true, 'is-overed': isOvered }"
-  >
-    Drop here
-  </div>
-</template>
-```
-
 ## 📄 License
 
 [MIT](LICENSE) © [ZiZiGY](https://github.com/ZiZiGY)
