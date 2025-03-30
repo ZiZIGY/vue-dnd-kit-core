@@ -111,15 +111,15 @@
 Choose your preferred package manager:
 
 ```bash
-npm install @vue-dnd-hooks/core
+npm install @vue-dnd-kit/core
 ```
 
 ```bash
-yarn add @vue-dnd-hooks/core
+yarn add @vue-dnd-kit/core
 ```
 
 ```bash
-pnpm install @vue-dnd-hooks/core
+pnpm install @vue-dnd-kit/core
 ```
 
 ## Basic Usage
@@ -131,7 +131,7 @@ pnpm install @vue-dnd-hooks/core
 ```vue
 <script setup lang="ts">
   import { ref } from 'vue';
-  import { DragOverlay } from '@vue-dnd-hooks/core';
+  import { DragOverlay } from '@vue-dnd-kit/core';
   import Draggable from './components/Draggable.vue';
   import Droppable from './components/Droppable.vue';
 
@@ -165,7 +165,7 @@ pnpm install @vue-dnd-hooks/core
 
 ```vue
 <script setup lang="ts">
-  import { useDraggable } from '@vue-dnd-hooks/core';
+  import { useDraggable } from '@vue-dnd-kit/core';
 
   const emit = defineEmits<{
     (e: 'end'): void;
@@ -193,13 +193,13 @@ pnpm install @vue-dnd-hooks/core
 </style>
 ```
 
-### Droppable.vue
+### Droppable.vue 
 
 <sup>🧩 components/Droppable.vue</sup>
 
 ```vue
 <script setup lang="ts">
-  import { useDroppable } from '@vue-dnd-hooks/core';
+  import { useDroppable } from '@vue-dnd-kit/core';
 
   const emit = defineEmits<{
     (e: 'drop'): void;
