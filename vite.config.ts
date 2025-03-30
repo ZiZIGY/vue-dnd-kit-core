@@ -17,14 +17,5 @@ export default defineConfig({
       formats: ['es', 'cjs'],
       fileName: (format) => `index.${format === 'es' ? 'esm' : format}.js`,
     },
-    rollupOptions: {
-      external: ['vue', '@vue-dnd-kit/utilities'],
-      output: {
-        globals: {
-          vue: 'Vue',
-          '@vue-dnd-kit/utilities': 'VueDnDKitUtilities',
-        },
-      },
-    },
   },
 });
