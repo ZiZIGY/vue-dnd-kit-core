@@ -1,6 +1,6 @@
 {
   "name": "@vue-dnd-kit/core",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "Core functionality for Vue DnD Kit - a lightweight Vue 3 library for building performant and accessible drag and drop interfaces",
   "author": "ZiZIGY",
   "license": "MIT",
@@ -34,14 +34,14 @@
     "lint": "eslint src --ext .ts,.vue",
     "prepublish": "npm run build"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/vue-dnd-kit-core.cjs.js",
+  "module": "dist/vue-dnd-kit-core.es.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.js"
+      "import": "./dist/vue-dnd-kit-core.es.js",
+      "require": "./dist/vue-dnd-kit-core.cjs.js"
     }
   },
   "files": [
