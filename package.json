@@ -1,6 +1,6 @@
 {
   "name": "@vue-dnd-kit/core",
-  "version": "0.0.23",
+  "version": "0.0.23-beta",
   "description": "Core functionality for Vue DnD Kit - a lightweight Vue 3 library for building performant and accessible drag and drop interfaces",
   "author": "ZiZIGY",
   "license": "MIT",
