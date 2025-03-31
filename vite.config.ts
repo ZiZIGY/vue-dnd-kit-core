@@ -7,15 +7,44 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
+      include: ['src/**/*.ts', 'src/**/*.vue'],
+      beforeWriteFile: (filePath, content) => {
+        const fixedContent = content.replace(
+          /from ['"]\.\.\/types['"];/g,
+          'from "../types";'
+        );
+        return {
+          filePath: filePath.replace('/src/', '/'),
+          content: fixedContent,
+        };
+      },
+      copyDtsFiles: true,
       insertTypesEntry: true,
+      cleanVueFileName: true,
     }),
   ],
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'VueDnDKitCore',
+      name: 'VueDndKitCore',
       formats: ['es', 'cjs'],
-      fileName: (format) => `index.${format === 'es' ? 'esm' : format}.js`,
+      fileName: (format) => `vue-dnd-kit-core.${format}.js`,
+    },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue',
+        },
+        exports: 'named',
+      },
+    },
+    cssCodeSplit: false,
+    cssMinify: true,
+  },
+  css: {
+    modules: {
+      localsConvention: 'camelCase',
     },
   },
 });

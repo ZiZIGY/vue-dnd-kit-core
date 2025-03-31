@@ -11,21 +11,21 @@
     "drop",
     "drag and drop",
     "drag and drop library",
-    "drag and drop component",
     "vue dnd",
     "vue drag and drop",
     "vue drag and drop library",
-    "vue drag and drop component",
     "vue dnd kit",
     "vue dnd kit core",
-    "vue dnd kit core component",
     "dnd-kit",
-    "dnd-kit core"
+    "dnd-kit core",
+    "vue-dnd-kit",
+    "vue-dnd-kit core",
+    "@vue-dnd-kit/core"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zizigy/vue-dnd-kit.git",
-    "directory": "packages/core"
+    "directory": "packages/utilities"
   },
   "scripts": {
     "start": "vite build --watch",

@@ -6,6 +6,8 @@ import { useSelection } from './composables/useSelection';
 
 export { DragOverlay, useDraggable, useDroppable, useDnDStore, useSelection };
 
+export { getBoundingBox } from './utils/geometry';
+
 export type {
   IDnDStore,
   IActiveContainer,
